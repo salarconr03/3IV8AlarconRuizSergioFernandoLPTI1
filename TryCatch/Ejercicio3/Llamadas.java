@@ -7,6 +7,7 @@ public class Llamadas{
 
     public void menu() {
         do{
+
             System.out.println("Que desea realizar.");
             System.out.println("1. Llamadas");
             System.out.println("2. Consultar o ingresar credito");
@@ -41,7 +42,6 @@ public class Llamadas{
                     System.out.println("El costo de la llamada es de $" + costo);
                 } catch (java.util.InputMismatchException e) {
                     System.out.println("Por favor ingresa un valor valido");
-                    System.out.println("¿Desea repetir el programa? S/N");
                     respuesta = entrada.next().charAt(0); 
                 }
                 System.out.println("¿Desea repetir el programa? S/N");
@@ -55,7 +55,6 @@ public class Llamadas{
             System.out.println("El costo de la llamada es de $" + costo);
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Por favor ingresa un valor valido");
-                System.out.println("¿Desea repetir el programa? S/N");
                 respuesta = entrada.next().charAt(0); 
             }
             System.out.println("¿Desea repetir el programa? S/N");
@@ -69,7 +68,6 @@ public class Llamadas{
             System.out.println("El costo de la llamada es de $" + costo);
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Por favor ingresa un valor valido");
-                System.out.println("¿Desea repetir el programa? S/N");
                 respuesta = entrada.next().charAt(0); 
             }
             System.out.println("¿Desea repetir el programa? S/N");
@@ -92,7 +90,6 @@ public class Llamadas{
                 System.out.println("Su credito es de $" + credito);
                 } catch (java.util.InputMismatchException e) {
                 System.out.println("Por favor ingresa un valor valido");
-                System.out.println("¿Desea repetir el programa? S/N");
                 respuesta = entrada.next().charAt(0); 
                 }
                 System.out.println("¿Desea repetir el programa? S/N");
