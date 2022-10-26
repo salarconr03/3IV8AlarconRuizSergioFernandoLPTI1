@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 public class Gato extends Animal {
     private int vidas;
 
@@ -22,8 +23,15 @@ public class Gato extends Animal {
         this.vidas = vidas;
     }
 
-    public void mostrargato() {
-        System.out.println("El nombre del gato es " + getNombre() + "\n" + "su raza es " + getRaza() + "\n"
-                + "Se alimenta de " + getTipoalimento() + "\n" + "el numero de vidas disponibles " + getVidas() + "\n");
+    public void mostrargato(){
+        String nombre = JOptionPane.showInputDialog("Ingresa el nombre del gato");
+        String raza = JOptionPane.showInputDialog("Ingresa la raza del gato");
+        String tipoalimento = JOptionPane.showInputDialog("Ingresa el tipo de alimeto");
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la edad del gato"));
+        int vidas = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero de vidas que le quedan"));
+
+        JOptionPane.showMessageDialog(null, "El nombre del gato es " + nombre + "\n" + "La raza del gato es " + raza + "\n" + "El tipo de alimento del gato es " + tipoalimento + "\n" + "La edad del gato es " + edad + "\n" + "El numero de vidas que le quedan son  " + vidas + "\n");
+
     }
+
 }

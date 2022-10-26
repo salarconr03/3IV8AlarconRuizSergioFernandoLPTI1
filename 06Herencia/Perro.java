@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 public class Perro extends Animal {
     // *La palabra resevada extend es para heredar
     private String ladrido;
@@ -24,7 +25,13 @@ public class Perro extends Animal {
     }
 
     public void mostrarperro() {
-        System.out.println("El nombre del perro es " + getNombre() + "\n" + "su raza es " + getRaza() + "\n"
-                + "Se alimenta de " + getTipoalimento() + "\n" + "su ladrido es " + getLadrido() + "\n");
+        String nombre = JOptionPane.showInputDialog("Ingresa el nombre del perro");
+        String raza = JOptionPane.showInputDialog("Ingresa la raza del perro");
+        String tipoalimento = JOptionPane.showInputDialog("Ingresa el tipo de alimeto");
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la edad del perro"));
+        String ladrido = JOptionPane.showInputDialog("Ingresa el ladrido del perro");
+
+        JOptionPane.showMessageDialog(null, "El nombre del perro es " + nombre + "\n" + "La raza del perro es " + raza + "\n" + "El tipo de alimento del perro es " + tipoalimento + "\n" + "La edad del perro es " + edad + "Su ladrido es " + ladrido + "\n");
+
     }
 }
